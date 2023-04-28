@@ -1,0 +1,47 @@
+.deposit {
+  .content {
+    &.protected-staking {
+      max-width: 530px;
+    }
+    &__box {
+      @apply p-4 rounded-lg w-full flex flex-col gap-8 pb-8;
+      background: #2d2e35;
+
+      &__title {
+        @apply font-semibold flex items-center relative justify-center;
+        font-size: 32px;
+        .icon-left-arrow {
+          @apply absolute w-6 h-6 left-6 cursor-pointer;
+        }
+      }
+
+      &__deposit {
+        @apply px-8 flex flex-col gap-2;
+
+        &__input {
+          @apply relative flex items-center;
+
+          input {
+            @apply w-full h-full pl-4 pr-28 text-base py-3 rounded-lg border border-solid border-grey500;
+            &::placeholder {
+              color: #888d9b;
+            }
+          }
+
+          &__max {
+            @apply absolute right-4 flex items-center gap-4;
+            button {
+              @apply py-1 px-1.5 rounded-lg;
+              background-color: rgba($color: #00ed7b, $alpha: 0.1);
+            }
+          }
+        }
+
+        &__balance {
+          @apply text-sm text-right mb-1 flex justify-between;
+          color: #888d9b;
+        }
+      }
+    }
+  }
+}

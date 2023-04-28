@@ -1,0 +1,17 @@
+.deposit {
+  .content {
+    &.node-operator {
+      max-width: 530px;
+    }
+    &__box {
+      &__step {
+        @apply flex flex-col border border-solid p-4 rounded-lg;
+
+        &__num {
+          @apply w-8 h-8 border border-solid rounded-full flex items-center justify-center font-medium mr-6;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

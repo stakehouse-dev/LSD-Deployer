@@ -1,0 +1,11 @@
+{
+  "short_name": "LSD Networks",
+  "name": "LSD Deployer",
+  "iconPath": "favicon.svg",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "providedBy": { "name": "Blockswap Network", "url": "https://www.blockswap.network/" },
+  "description": "Create your own liquid staking derivatives (LSD) network in only 60 seconds. Set your own commissions and build your business. It is completely free to use!"
+}

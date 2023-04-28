@@ -1,0 +1,21 @@
+.withdraw__input {
+  @apply relative flex items-center;
+
+  input {
+    @apply w-full h-full pl-4 pr-28 text-base py-3 bg-black rounded-lg border border-solid border-grey500 text-grey25 outline-none;
+    &::placeholder {
+      color: #888d9b;
+    }
+    &:disabled {
+      @apply text-grey500;
+    }
+  }
+
+  &__max {
+    @apply absolute right-4 flex items-center gap-4;
+    button {
+      @apply py-1 px-1.5 rounded-lg;
+      background-color: rgba($color: #00ed7b, $alpha: 0.1);
+    }
+  }
+}
